@@ -1,0 +1,25 @@
+{
+  "name": "hcz-dff-demo-250619",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx main.ts",
+    "dev": "tsx main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/koa": "^2.13.0",
+    "@types/koa-router": "^7.4.8",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0"
+  },
+  "dependencies": {
+    "awilix": "10.0.2",
+    "awilix-koa": "7.0.1",
+    "koa": "^3.0.0",
+    "koa-router": "^13.0.1"
+  }
+}
