@@ -1,6 +1,8 @@
 
 import { IHomeData } from "./IHomeData";
 
-export interface IHome {
+interface IHome {
     getHomeData():Promise<IHomeData>;
 }
+
+export default IHome;

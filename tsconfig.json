@@ -8,13 +8,22 @@
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["typings"],
-    "baseUrl": "./",
+    "typeRoots": ["./node_modules/@types", "./typings"],
+    "baseUrl": ".",
     "paths": {
       "@interfaces/*": ["interface/*"],
       "@config/*": ["config/*"],
       "@middlewares/*": ["middlewares/*"]
     }
   },
-  "include": ["**/*"]
+  "include": [
+    "**/*",
+    "typings/*"
+  ],
+  "ts-node": {
+    "files": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
 }

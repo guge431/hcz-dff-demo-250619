@@ -1,4 +1,4 @@
-import IHome from '../interface/IHome'
+import IHome from '@interfaces/IHome'
 import { IHomeData } from '@interfaces/IHomeData'
 
 class HomeService implements IHome {
