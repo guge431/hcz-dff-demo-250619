@@ -27,6 +27,7 @@ container.loadModules(['services/*.ts'],{
       lifetime: Lifetime.SCOPED,
     }
 })
+console.log('容器中注册的服务:', Object.keys(container.registrations))
 const app=new Koa()
 // app.use(async (ctx) => {
 //   ctx.body = 'Hello Koa!';
@@ -43,7 +44,7 @@ app.context.render = co.wrap(
   })
 );
 
-app.use(historyApiFallback({ index: '/', whiteList: ['/api']}))
+app.use(historyApiFallback({ index: '/', whiteList: ['/people']}))
 app.use(loadControllers(`${__dirname}/routers/*.ts`));
 
 

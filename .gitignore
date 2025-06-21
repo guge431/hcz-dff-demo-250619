@@ -164,3 +164,4 @@ logs
 config/local.json
 config/local.js
 config/local.ts
+/generated/prisma

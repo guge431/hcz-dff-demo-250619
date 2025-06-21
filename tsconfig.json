@@ -13,7 +13,9 @@
     "paths": {
       "@interfaces/*": ["interface/*"],
       "@config/*": ["config/*"],
-      "@middlewares/*": ["middlewares/*"]
+      "@middlewares/*": ["middlewares/*"],
+      "@utils/*": ["utils/*"],
+      "@services/*": ["services/*"],
     }
   },
   "include": [
