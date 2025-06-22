@@ -5,6 +5,7 @@ addAliases({
   '@interfaces': `${__dirname}/interface`,
   '@config': `${__dirname}/config`,
   '@middlewares': `${__dirname}/middlewares`,
+  '@utils': `${__dirname}/utils`
 });
 
 import Koa from 'koa'
@@ -44,7 +45,7 @@ app.context.render = co.wrap(
   })
 );
 
-app.use(historyApiFallback({ index: '/', whiteList: ['/people']}))
+app.use(historyApiFallback({ index: '/', whiteList: ['/people','/api']}))
 app.use(loadControllers(`${__dirname}/routers/*.ts`));
 
 

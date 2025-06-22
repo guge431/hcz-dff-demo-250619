@@ -1,7 +1,3 @@
-
-
-
-
 import IPeople from '@interfaces/IPeople'
 import { IPeopleData,IHobby } from '@interfaces/IPeopleData'
 import prisma from '@utils/prisma'
